@@ -46,7 +46,7 @@ export default class SearchForm extends Component {
     return (<React.Fragment>
       <div className="col s12 m12 l6">
         <div className="card-panel">
-          <h2 className="header center">Search for an Article</h2>
+          <h2 className="header center">Search for and annotate articles of interest! </h2>
           <div className="row">
             <form className="col s12" onSubmit={this.handleSubmit}>
 
@@ -73,7 +73,7 @@ export default class SearchForm extends Component {
               <div className="row">
                 <div className="input-field col s12">
                   <i className="material-icons prefix">date_range</i>
-                  <label for="startYear">Start Year (Optional)</label>
+                  <label for="startYear">Start Year </label>
                   <input type="text" ref="startYear" className="datepicker" id="startYear"/>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default class SearchForm extends Component {
               <div className="row">
                 <div className="input-field col s12">
                   <i className="material-icons prefix">date_range</i>
-                  <label for="endYear">End Year (Optional)</label>
+                  <label for="endYear">End Year </label>
                   <input type="date" ref="endYear" className="datepicker" id="endYear"/>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default class SearchForm extends Component {
                           </div>
                         </div>
                       </div>)
-                      : (<button className="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
+                      : (<button className="btn cyan waves-effect waves-light right" type="submit" name="action">Search
                         <i className="mdi-content-send right"></i>
                       </button>)
                   }
